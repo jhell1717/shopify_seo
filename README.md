@@ -1,6 +1,6 @@
 # Shopify SEO Tool
 
-An AI-powered Python package and web application for optimizing Shopify product titles using advanced language models. This tool helps e-commerce businesses improve their SEO by automatically rewriting product titles to be more concise, descriptive, and search-engine friendly.
+An AI-powered Python package and web application for optimising Shopify product titles using advanced language models. This tool helps e-commerce businesses improve their SEO by automatically rewriting product titles to be more concise, descriptive, and search-engine friendly.
 
 ## Features
 

@@ -29,7 +29,7 @@ class ProcessingResult:
 
 class ShopifySEOProcessor:
     """
-    Main processor class for optimizing Shopify product titles using AI.
+    Main processor class for optimising Shopify product titles using AI.
     """
     
     def __init__(self, config: Optional[Config] = None):
