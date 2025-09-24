@@ -1,0 +1,2 @@
+[console_scripts]
+shopify-seo = shopify_seo.cli:main

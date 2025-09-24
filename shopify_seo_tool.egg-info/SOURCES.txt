@@ -1,0 +1,12 @@
+README.md
+setup.py
+shopify_seo/__init__.py
+shopify_seo/cli.py
+shopify_seo/config.py
+shopify_seo/processor.py
+shopify_seo_tool.egg-info/PKG-INFO
+shopify_seo_tool.egg-info/SOURCES.txt
+shopify_seo_tool.egg-info/dependency_links.txt
+shopify_seo_tool.egg-info/entry_points.txt
+shopify_seo_tool.egg-info/requires.txt
+shopify_seo_tool.egg-info/top_level.txt
