@@ -21,7 +21,7 @@ def create_test_csv():
         'Title': ['Test Product 1', 'Test Product 2'],
         'Body (HTML)': ['<p>Description for product 1</p>', '<p>Description for product 2</p>'],
         'Status': ['active', 'active'],
-        'SEO Title': ['This is a very long SEO title that exceeds the maximum character limit for optimal search engine optimization', 'Another long SEO title that needs to be optimized for better search engine visibility'],
+        'SEO Title': ['This is a very long SEO title that exceeds the maximum character limit for optimal search engine optimisation', 'Another long SEO title that needs to be optimised for better search engine visibility'],
         'SEO Description': ['SEO description 1', 'SEO description 2']
     }
     

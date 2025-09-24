@@ -4,12 +4,12 @@ An AI-powered Python package and web application for optimising Shopify product 
 
 ## Features
 
-- 🤖 **AI-Powered Title Optimisation**: Uses advanced language models to rewrite product titles
+- **AI-Powered Title Optimisation**: Uses advanced language models to rewrite product titles
 - **Batch Processing**: Process entire Shopify CSV exports efficiently
-- **SEO-Focused**: Optimizes titles for search engines while maintaining readability
+- **SEO-Focused**: Optimises titles for search engines while maintaining readability
 - **Web Interface**: Easy-to-use web application with drag-and-drop file upload
 - **Python Package**: Use as a library in your own applications
-- **Fast Processing**: Optimized for handling large product catalogs
+- **Fast Processing**: Optimised for handling large product catalogs
 - **Secure**: Temporary file handling with automatic cleanup
 
 ## Installation
@@ -39,7 +39,7 @@ python app.py
 
 2. Open your browser and go to `http://localhost:5000`
 
-3. Upload your Shopify CSV file and download the optimized version
+3. Upload your Shopify CSV file and download the optimised version
 
 ### Python Package Usage
 
@@ -92,7 +92,7 @@ Your Shopify CSV export must contain the following columns:
 - `Title`: Product title
 - `Body (HTML)`: Product description
 - `Status`: Product status (active, draft, etc.)
-- `SEO Title`: SEO-optimized title (will be edited)
+- `SEO Title`: SEO-optimised title (will be edited)
 - `SEO Description`: SEO description
 
 ## API Endpoints

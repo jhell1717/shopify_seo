@@ -13,7 +13,6 @@ from dataclasses import dataclass
 
 from .config import Config
 
-
 @dataclass
 class ProcessingResult:
     """Result of processing a Shopify CSV file."""
