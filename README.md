@@ -37,7 +37,7 @@ pip install -e .
 python app.py
 ```
 
-2. Open your browser and go to `http://localhost:5000`
+2. Open your browser and go to `http://localhost:5080`
 
 3. Upload your Shopify CSV file and download the optimised version
 
