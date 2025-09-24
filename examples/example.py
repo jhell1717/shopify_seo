@@ -13,7 +13,7 @@ def main():
     processor = ShopifySEOProcessor()
     
     # Validate a CSV file
-    input_file = "data/products_export_1.csv"
+    input_file = "/Users/joshuahellewell/Desktop/01-dev/shopify_app/data/products_export_1 copy.csv"
     is_valid, error_msg = processor.validate_csv(input_file)
     
     if is_valid:
@@ -53,7 +53,7 @@ def main():
     
     # Example 3: Process with custom output file
     print("\n🚀 Example 3: Process with custom output file")
-    output_file = "data/products_optimized_custom.csv"
+    output_file = "/Users/joshuahellewell/Desktop/01-dev/shopify_app/data/products_optimized_custom.csv"
     result = processor_custom.process_csv(input_file, output_file)
     
     if result.success:
