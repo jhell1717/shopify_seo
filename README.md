@@ -4,7 +4,7 @@ An AI-powered Python package and web application for optimizing Shopify product 
 
 ## Features
 
-- 🤖 **AI-Powered Title Optimization**: Uses advanced language models to rewrite product titles
+- 🤖 **AI-Powered Title Optimisation**: Uses advanced language models to rewrite product titles
 - **Batch Processing**: Process entire Shopify CSV exports efficiently
 - **SEO-Focused**: Optimizes titles for search engines while maintaining readability
 - **Web Interface**: Easy-to-use web application with drag-and-drop file upload
@@ -176,7 +176,7 @@ For issues and questions:
 
 ### v1.0.0
 - Initial release
-- AI-powered title optimization
+- AI-powered title optimisation
 - Web interface
 - Python package
 - Batch processing support

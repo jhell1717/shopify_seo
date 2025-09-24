@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify SEO Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopify SEO Tool</h1>
+        <p class="subtitle">Optimize your product titles with AI-powered SEO enhancement</p>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Drop your CSV file here or click to browse</div>
+            <div class="upload-subtext">Maximum file size: 16MB</div>
+            <input type="file" id="fileInput" accept=".csv" />
+        </div>
+        
+        <button class="btn" id="processBtn" onclick="processFile()" disabled>
+            Process File
+        </button>
+        
+        <div class="progress" id="progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div style="text-align: center; margin-top: 10px; color: #666;">
+                Processing your file...
+            </div>
+        </div>
+        
+        <div class="status" id="status"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

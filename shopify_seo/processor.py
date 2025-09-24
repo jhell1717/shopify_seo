@@ -1,5 +1,5 @@
 """
-Main processor class for Shopify SEO optimization.
+Main processor class for Shopify SEO optimisation.
 """
 
 import re
