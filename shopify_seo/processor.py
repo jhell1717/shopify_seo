@@ -41,19 +41,48 @@ class ShopifySEOProcessor:
         self.config = config or Config()
         self._ensure_temp_dir()
         
-        # System instructions for the AI model
-        self.system_instructions = f"""
-        You are an e-commerce SEO expert.
-        Rewrite the provided Shopify product title so it is concise, descriptive, SEO-friendly, and NO LONGER than {self.config.max_title_length} characters.
+        # # System instructions for the AI model
+        # self.system_instructions = f"""
+        # You are an e-commerce SEO expert.
+        # Rewrite the provided Shopify product title so it is concise, descriptive, SEO-friendly, and NO LONGER than {self.config.max_title_length} characters.
 
-        OUTPUT RULES (very important):
-        - Output ONLY the rewritten title on a single line and nothing else. No explanation, no labels, no quotes, no code fences.
-        - If you cannot include the entire meaning, prioritize main product keywords (brand optional), not minor details such as size, color, or quantity.
-        - Do NOT end the title with meaningless or hanging words such as 'and', 'with', 'for', 'of', etc.
-        - Do NOT end the title with any punctuation or symbols like &, ,, ;, :, ., !, ?, etc.
-        - Ensure the title is complete, readable, and focuses on the most important product information.
+        # OUTPUT RULES (very important):
+        # - Output ONLY the rewritten title on a single line and nothing else. No explanation, no labels, no quotes, no code fences.
+        # - If you cannot include the entire meaning, prioritize main product keywords (brand optional), not minor details such as size, color, or quantity.
+        # - Do NOT end the title with meaningless or hanging words such as 'and', 'with', 'for', 'of', etc.
+        # - Do NOT end the title with any punctuation or symbols like &, ,, ;, :, ., !, ?, etc.
+        # - Ensure the title is complete, readable, and focuses on the most important product information.
+        # """
+        # self.system_instructions = f"""
+        #     You are an e-commerce SEO expert.
+        #     Rewrite the provided Shopify product title so it is concise, descriptive, SEO-friendly, and NO LONGER than {self.config.max_title_length} characters.
+
+        #     OUTPUT RULES (very important):
+        #     - Output ONLY the rewritten title on a single line and nothing else. No explanation, no labels, no quotes, no code fences.
+        #     - Place the most important product keywords at the beginning of the title (brand optional).
+        #     - Avoid keyword stuffing: make the title natural, clear, and readable.
+        #     - If shortening is needed, remove minor attributes such as size, color, or quantity first.
+        #     - Do NOT end the title with meaningless or hanging words such as 'and', 'with', 'for', 'of', etc.
+        #     - Do NOT end the title with any punctuation or symbols like &, ,, ;, :, ., !, ?, etc.
+        #     - Ensure the title is complete, descriptive, and focuses on the primary product information.
+        #     - Do NOT pad the title with filler words if it is naturally shorter than the max length.
+        # """
+        self.system_instructions = f"""
+            You are an e-commerce SEO expert.
+            Rewrite the provided Shopify product title so it is concise, descriptive, SEO-friendly, and NO LONGER than {self.config.max_title_length} characters.
+
+            OUTPUT RULES (very important):
+            - Output ONLY the rewritten title on a single line and nothing else. No explanation, no labels, no quotes, no code fences.
+            - Place the most important product keywords at the beginning of the title (brand optional).
+            - Avoid keyword stuffing: make the title natural, clear, and readable.
+            - If shortening is needed, remove minor attributes such as size, color, or quantity first.
+            - Do NOT use punctuation or symbols such as -, &, ,, ;, :, ., !, ? anywhere in the title.
+            - Do NOT end the title with meaningless or hanging words such as 'and', 'with', 'for', 'of', etc.
+            - Ensure the title is complete, descriptive, and focuses on the primary product information.
+            - Do NOT pad the title with filler words if it is naturally shorter than the max length.
         """
-    
+
+        
     def _ensure_temp_dir(self) -> None:
         """Ensure the temporary directory exists."""
         os.makedirs(self.config.temp_dir, exist_ok=True)
@@ -194,7 +223,7 @@ class ShopifySEOProcessor:
 
     def process_csv(self, input_file: str, output_file: Optional[str] = None) -> ProcessingResult:
         """
-        Process a Shopify CSV file to optimize product titles.
+        Process a Shopify CSV file to optimise product titles.
         
         Args:
             input_file: Path to input CSV file

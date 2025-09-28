@@ -115,7 +115,7 @@ function showSuccess(data) {
             </div>
         </div>
         <button class="btn download-btn" onclick="downloadFile()">
-            📥 Download Optimized CSV
+            📥 Download Optimised CSV
         </button>
     `;
     status.className = 'status success';

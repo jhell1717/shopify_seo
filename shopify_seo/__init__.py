@@ -1,5 +1,5 @@
 """
-Shopify SEO Tool - A Python package for optimizing Shopify product titles using AI.
+Shopify SEO Tool - A Python package for optimising Shopify product titles using AI.
 """
 
 __version__ = "1.0.0"
